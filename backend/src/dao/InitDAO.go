@@ -8,7 +8,7 @@ import (
 var DBORM *gorm.DB
 
 func InitDAO() {
-	db, err := gorm.Open("postgres", "sslmode=disable host=localhost port=5432 user=postgres dbname=words password=...parola...")
+	db, err := gorm.Open("postgres", "no credentials will be leaked :)")
 
 	if err != nil {
 		println(err.Error())
